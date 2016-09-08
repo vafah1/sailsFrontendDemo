@@ -1,0 +1,69 @@
+<ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li class="active">Add Employee</a></li>
+</ol>
+
+<br/>
+<%- partial ('partials/statusmessage.ejs') %>
+
+<h2>Add Employee</h2>
+<form action="/create" method="POST" class="form-horizontal">
+  <div class="form-group">
+    <label for="firstName" class="col-sm-2 control-label">First Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastName" class="col-sm-2 control-label">First Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="lastName" name="lastName"  placeholder="Last Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email" class="col-sm-2 control-label">Email Address</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="email" name="email" placeholder="user@example.com">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="homePhone" class="col-sm-2 control-label">Home Phone</label>
+    <div class="col-sm-10">
+      <input type="phone" class="form-control" id="homePhone" name="homePhone" placeholder="###-###-####">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="cellPhone" class="col-sm-2 control-label">Cell Phone</label>
+    <div class="col-sm-10">
+      <input type="phone" class="form-control" id="cellPhone" name="cellPhone" placeholder="###-###-####">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="password" name="password" aria-describedby="helpBlock">
+      <span id="helpBlock" class="help-block">Password at least 8 characters, 1 upppercase, 1 lowercase, and one number</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="radio">
+        <label>
+          <input type="radio" name="active" id="active1" value="1" checked>
+          Active
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="active" id="active2" value="0">
+          Inactive
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Add Employee</button>
+    </div>
+  </div>
+</form>
