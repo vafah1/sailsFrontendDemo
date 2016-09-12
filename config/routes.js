@@ -32,10 +32,10 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/create':'EmployeeController.create',
-  '/'      :'EmployeeController.read',
-  '/update':'EmployeeController.update',
-  '/delete':'EmployeeController.delete'
+  '/create':'ProjectController.create',
+  '/'      :'ProjectController.read',
+  '/update':'ProjectController.update',
+  '/delete':'ProjectController.delete'
 
   /***************************************************************************
   *                                                                          *
